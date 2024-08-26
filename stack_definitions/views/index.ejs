@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h2>
+    <%= myname %>
+  </h2>
+  <h2>The MEAN Stack</h2>
+
+  <ul>
+    <% word.forEach(function(word) { %>
+      <li>
+        <%= word.name %> : <%= word.def %>
+      </li>
+    <% }); %>
+  </ul>
+</body>
+</html>
